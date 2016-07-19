@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>S name</th>
-      <th>S address</th>
-      <th>S location</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Location</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,9 +15,9 @@
   <tbody>
     <% @stores.each do |store| %>
       <tr>
-        <td><%= store.s_name %></td>
-        <td><%= store.s_address %></td>
-        <td><%= store.s_location %></td>
+        <td><%= store.name %></td>
+        <td><%= store.address %></td>
+        <td><%= store.location %></td>
         <td><%= link_to 'Show', store %></td>
         <td><%= link_to 'Edit', edit_store_path(store) %></td>
         <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
